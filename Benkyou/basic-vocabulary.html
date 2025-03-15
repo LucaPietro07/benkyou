@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Vocabulary Flashcards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-to-home">Back to Home</a>
+        <h1>Basic Vocabulary Flashcards</h1>
+    </header>
+    <button id="generate-test-button">Generate Test</button>
+    <div id="test-container"></div>
+    <div>
+        <label for="display-mode">Display Mode:</label>
+        <select id="display-mode">
+            <option value="kanji-hiragana">Kanji/Hiragana</option>
+            <option value="hiragana-definition">Hiragana/Definition</option>
+            <option value="kanji-hiragana-definition">Kanji+Hiragana/Definition</option>
+        </select>
+    </div>
+    <div id="flashcard-container"></div>
+    <script>
+        const flashcardData = {
+            "sets": [
+                {
+                    "name": "Basic Vocabulary",
+                    "cards": [
+                        { "kanji": "こんにちは", "hiragana": "こんにちは", "definition": "Hello" },
+                        { "kanji": "ありがとう", "hiragana": "ありがとう", "definition": "Thank you" },
+                        { "kanji": "さようなら", "hiragana": "さようなら", "definition": "Goodbye" }
+                    ]
+                }
+            ]
+        };
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
